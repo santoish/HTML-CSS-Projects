@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*
+{
+    margin:0;
+    padding:0;
+    font-family: "Montserrat", sans-serif;
+}
+body
+{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.container
+{
+    display:flex;
+    flex-direction: column;
+    gap:25px;
+    width:250px;
+    /* border:5px solid green; */
+    padding:25px;
+}
+.container h1
+{
+    position: relative;
+}
+.container h1::after
+{
+    position: absolute;
+    content: "";
+    height:3px;
+    width:35px;
+    bottom:0;
+    left:2px;
+    background-color: rgb(255, 0, 102);
+}
+.mail, .password
+{
+    position:relative;
+}
+.mail .mail-box,.password-box
+{
+    border:none;
+    outline: none;
+    font-size: 12px;
+    font-weight: 500;
+    padding:3px 0px;
+    padding-right:25px;
+    /* padding-left:5px; */
+    display:flex;
+    flex-grow: 1;
+}
+
+.mail .bottom:before
+{
+    content: "";
+    position:absolute;
+    width:100%;
+    height:2px;
+    background-color: rgb(188, 188, 188);
+    bottom:0;
+    left: 0;
+    top:25px;
+}
+
+.mail .bottom:after
+{
+    content: "";
+    position:absolute;
+    width:100%;
+    height:2px;
+    background-color: rgb(255, 0, 102);
+    bottom:0;
+    left: 0;
+    top:25px;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all ease 0.3s;
+}
+
+.mail .mail-box:focus ~ .bottom:after
+{
+    transform: scaleX(1);
+}
+
+.password .bottom:before
+{
+    content: "";
+    position:absolute;
+    width:100%;
+    height:2px;
+    background-color: rgb(188, 188, 188);
+    bottom:0;
+    left: 0;
+    top:25px;
+}
+
+.password .bottom:after
+{
+    content: "";
+    position:absolute;
+    width:100%;
+    height:2px;
+    background-color: rgb(255, 0, 102);
+    bottom:0;
+    left: 0;
+    top:25px;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all ease 0.3s;
+}
+
+.password .password-box:focus ~ .bottom:after
+{
+    transform: scaleX(1);
+}
+
+
+.button
+{
+    padding:8px;
+    background:linear-gradient(to left,rgb(255, 0, 102),rgb(171, 44, 94));
+    color:white;
+    font-family: inherit;
+    font-weight: 500;
+    border-radius: 5px;
+    outline:none;
+    border:none;
+    cursor:pointer;
+    transition:all 0.3s ease;
+}
+
+.button:hover
+{
+    letter-spacing: 1px;
+    background:linear-gradient(to right,rgb(255, 0, 102),rgb(171, 44, 94));
+}
+
+span
+{
+    font-size: 12px;
+    text-align: center;
+    font-weight: 500;
+    padding:0;
+}
+
+.twitter
+{
+    background-color: rgb(31, 31, 31);
+    padding:5px 10px;
+    border-radius: 5px;
+    display:flex;
+    font-family: inherit;
+    cursor:pointer;
+}
+
+.twitter a
+{
+    color:white;
+}
+
+.twitter .letter
+{
+    font-size: 12px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0px 10px;
+}
+
+.facebook
+{
+    background-color: rgb(73, 34, 229);
+    padding:5px 10px;
+    border-radius: 5px;
+    display:flex;
+    font-family: inherit;
+    cursor:pointer;
+}
+
+.facebook a
+{
+    color:white;
+}
+
+.facebook .letter
+{
+    font-size: 12px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0px 10px;
+}
