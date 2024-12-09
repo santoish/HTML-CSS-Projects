@@ -1,0 +1,16 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+header .icons
+{
+    padding:0px 15px;
+}
+header .icons a
+{
+    font-size: 15px;
+    padding:10px 5px;
+    text-align: center;
+}

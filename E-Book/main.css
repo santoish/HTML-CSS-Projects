@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*
+{
+    padding:0;
+    margin:0;
+}
+
+/* Content Box - 1 */
+
+.content-box-1
+{
+    display:flex;
+    flex-direction: column;
+    padding:150px 75px;
+}
+
+.content-box-1 .text-box .big
+{
+    width:55%;
+    margin:10px 0;
+    line-height: 45px;
+    word-spacing: 5px;
+}
+
+.content-box-1 .text-box .small
+{
+    width:50%;
+    margin:10px 0;
+    font-size: 12px;
+    line-height: 18px;
+    word-spacing: 2px;
+    color:rgb(75, 75, 75);
+}
+
+.content-box-1 .button-box
+{
+    display:flex;
+    align-items: center;
+}
+
+.content-box-1 .button-box .button-1
+{
+    padding:10px 15px; 
+    border-radius: 2px;
+    outline: none;
+    font-weight: 700;
+    color:white;
+    border:1px solid rgb(97, 114, 200);
+    font-size:12px;
+    margin:10px 0px;
+    cursor:pointer;
+    transition: all 0.25s ease;
+    background-color: rgb(97, 114, 200);
+}
+
+.content-box-1 .button-box .button-1:hover
+{
+    background-color: rgba(97, 114, 200, 0);
+    color:rgb(57, 82, 205);
+    border:1px solid rgb(97, 114, 200);
+}
+
+.content-box-1 .button-box .button-2
+{
+    padding:10px 15px; 
+    border-radius: 2px;
+    outline: none;
+    font-weight: 700;
+    color:rgb(97, 114, 200);;
+    border:1px solid rgb(97, 114, 200);
+    font-size:12px;
+    margin:10px 25px;
+    cursor:pointer;
+    transition: all 0.25s ease;
+    background-color:none;
+}
+
+.content-box-1 .button-box .button-2:hover
+{
+    background-color: rgb(97, 114, 200);
+    color:white;
+}
+
+/* Content Box - 2 */
+
+.content-box-2
+{
+    display:flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    padding:25px 10px;
+}
+
+.content-box-2 .cont
+{
+    text-align: center;
+    padding:5px 25px;
+}
+.content-box-2 .cont p
+{
+    font-size:12px;
+    font-weight:400;
+    color:rgb(46, 46, 46);
+}
+
+/* Content Box -3*/
+.content-box-3
+{
+    padding:30px 100px;
+    background-color: rgb(240, 240, 240);
+}
+.content-box-3 .image
+{
+    height:350px;
+    width:350px;
+    background:url(./Images/about-img.webp);
+    background-position: center;
+    background-size: cover;
+    margin:0px 20px;
+    float:left;
+}
+.content-box-3 .details
+{
+    padding:10px;
+}
+
+.content-box-3 .details h2
+{
+    word-spacing:7px;
+    line-height: 30px;
+    margin:10px 0px;
+}
+
+.content-box-3 .details h5
+{
+    color:coral;
+    font-weight: 450;
+    line-height: 15px;
+    text-transform:uppercase;
+    margin:5px 0px;
+}
+
+.content-box-3 .details p
+{
+    font-size:13px;
+    word-spacing: 8px;
+    line-height: 20px;
+    margin:10px 0px;
+}
+
+.content-box-3 .details button
+{
+    padding:8px 15px;
+    border-radius: 2px;
+    outline: none;
+    font-weight: 700;
+    color:#fff;
+    border:1px solid rgb(97, 114, 200);
+    font-size:12px;
+    background-color:rgb(97, 114, 200);
+}
+
+/* Content Box -4 */
+
+.content-box-4
+{
+    padding:20px 100px;
+    background-color: rgb(240, 240, 240);
+    display:grid;
+    grid-template-columns: 300px 300px 300px;
+    column-gap: 15px;
+    row-gap: 20px;
+}
+
+.content-box-4 .heading
+{
+    text-align: center;
+    grid-column: span 3;
+}
+
+.content-box-4 .heading p
+{
+    font-size:12px;
+    margin:3px 0px;
+    color:coral;
+}
+.content-box-4 .book1
+{
+    width:300px;
+    padding:15px 5px;
+}
+
+.content-box-4 .book1 .img1
+{
+    width:150px;
+    height:180px;
+    background:url(./Images/book-1.webp) no-repeat;
+    background-position: center;
+    background-size: cover;
+    float:left;
+}
+
+.content-box-4 .book1 .img-details
+{
+    display:flex;
+    flex-direction: column;
+    gap:8px;
+    padding:10px 15px;
+    height:180px;
+}
+
+.content-box-4 .book1 .img-details h4
+{
+    text-transform: capitalize;
+    line-height: 20px;
+}
+
+.content-box-4 .book1 .img-details p
+{
+    font-size: 12px;
+}
+
+.content-box-4 .book1 .img-details .price
+{
+    color:coral;
+}
+
+.content-box-4 .book1 .img2
+{
+    width:150px;
+    height:180px;
+    background:url(./Images/book-2.webp) no-repeat;
+    background-position: center;
+    background-size: cover;
+    float:left;
+}
+
+.content-box-4 .book1 .img3
+{
+    width:150px;
+    height:180px;
+    background:url(./Images/book-3.webp) no-repeat;
+    background-position: center;
+    background-size: cover;
+    float:left;
+}
+
+.content-box-4 .book1 .img4
+{
+    width:150px;
+    height:180px;
+    background:url(./Images/book-4.webp) no-repeat;
+    background-position: center;
+    background-size: cover;
+    float:left;
+}
+
+.content-box-4 .book1 .img5
+{
+    width:150px;
+    height:180px;
+    background:url(./Images/book-5.webp) no-repeat;
+    background-position: center;
+    background-size: cover;
+    float:left;
+}
+
+.content-box-4 .book1 .img6
+{
+    width:150px;
+    height:180px;
+    background:url(./Images/book-6.webp) no-repeat;
+    background-position: center;
+    background-size: cover;
+    float:left;
+}
+
+.footer
+{
+    display:flex;
+    padding:75px 50px;
+    background:black;
+    align-items: top;
+    justify-content:space-around;
+}
+
+.footer .section1
+{
+    display:flex;
+    flex-direction: column;
+    gap:15px;
+    width:35%;
+    color:white;
+}
+
+.section1 .icon-section a
+{
+    font-size: 15px;
+    color:white;
+    padding:5px 8px;
+    background:rgb(114, 156, 173);
+    border-radius: 35px;
+    margin:0px 2px;
+}
+
+.footer .section2
+{
+    display:flex;
+    flex:1fr;
+    flex-direction: column;
+    gap:15px;
+    color:white;
+}
+
+.section2 ul
+{
+    list-style-type: none;
+}
+
+.section2 ul li a
+{
+    text-decoration: none;
+    color:white;
+}
+
+.section2 ul li
+{
+    padding:5px 0px;
+}
+
+.footer .section3
+{
+    color:white;
+    display:flex;
+    width:30%;
+    gap:15px;
+    flex-direction: column;
+}
+
+.footer .section3 a
+{
+    padding:0px 8px;
+    text-transform: capitalize;
+}
+
+

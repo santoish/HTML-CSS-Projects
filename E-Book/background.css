@@ -1,0 +1,16 @@
+*
+{
+    padding:0;
+    margin:0;
+}
+
+.bg-img
+{
+    background:url(./Images/header-img.webp);
+    width:100%;
+    height:100vh;
+    background-position: top;
+    background-size: cover;
+    position:fixed;
+    z-index: -1;
+}
