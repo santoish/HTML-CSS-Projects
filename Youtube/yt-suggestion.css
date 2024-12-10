@@ -1,0 +1,27 @@
+.suggestion ul
+{
+    display:flex;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    column-gap: 5px;
+    margin-top:10px;
+    margin-bottom:20px;
+}
+.suggestion li
+{
+    font-size:13px;
+    font-weight:450;
+    width:max-content;
+    height:max-content;
+    background-color: rgba(175, 174, 174, 0.315);
+    color:black;
+    padding:4px 7px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.suggestion .first
+{
+    background-color:black;
+    color:white;
+}

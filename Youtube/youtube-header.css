@@ -1,0 +1,164 @@
+
+.header
+{
+    display:flex;
+    flex-direction: row;
+    height:50px;
+    justify-content: space-between;
+    background-color:rgb(255, 255, 255);
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+    z-index: 100;
+    border-bottom: 1px solid gray;
+}
+
+.left-side
+{
+    display:flex;
+    flex-direction: row;
+    /* flex:1; *
+    /* background-color: rgb(105, 17, 17); */
+    margin-left:35px;
+    margin-right:50px;
+}
+.menu-image
+{
+    width:18px;
+    margin-right:20px;
+}
+.yt-ic-name
+{
+    width:70px;
+}
+
+.middle-side
+{
+
+    display:flex;
+    flex:1;
+    position:relative;
+    max-width:450px;
+    align-items: center;
+    margin-right:40px;
+    margin-left:80px;
+}
+.search-bar
+{
+    flex:1;
+    height:30px;
+    min-width:150px;
+    margin-right:0px;
+    border:1px solid gray;
+    outline:none;
+}
+.search-button
+{
+    height:30px;
+    margin-left:-1px;
+    border:1px solid gray;
+    cursor:pointer;
+}
+
+.search-bar::placeholder
+{
+    padding-left:5px;
+    font-family:Arial;
+}
+.search-icon
+{
+    padding:2px 7px;
+    width:22px;
+}
+.search-button .txt-search
+{
+    font-size:9px;
+    color:white;
+    background-color:rgb(110, 110, 110);
+    border-radius:3px;
+    padding:3px;
+    position:absolute;
+    bottom:-10px;
+    right:35px;
+    opacity:0;
+}
+.voice-button .txt-search
+{
+    font-size:9px;
+    color:white;
+    background-color:rgb(110, 110, 110);
+    border-radius:3px;
+    padding:3px;
+    white-space: nowrap;
+    position:absolute;
+    bottom:-10px;
+    right:-30px;
+    opacity:0;
+}
+
+.search-button:hover .txt-search,.voice-button:hover .txt-search
+{
+    opacity:1;
+}
+
+.voice-button
+{
+    display:flex;
+    width:30px;
+    height:30px;
+    margin-left:10px;
+    border-radius:100%;
+    border:1px solid rgb(53, 53, 53);
+    cursor:pointer;
+}
+.yt-voice-icon
+{
+    width:24px;
+    padding:3px;
+    display:flex;
+    align-items: center;
+}
+
+.right-side
+{
+    display:flex;
+    width:120px;
+    justify-content: space-between;
+    align-items: center;
+    margin-right:40px;
+}
+.create-icon
+{
+    width:35px;
+    margin-left:20px;
+}
+.bell-icon
+{
+    width:25px;
+    margin-left:20px;
+}
+.notification
+{
+    display:flex;
+    position:relative;
+}
+.notify-count
+{
+    width:10px;
+    height:10px;
+    background-color: red;
+    color:white;
+    position: absolute;
+    right:-3px;
+    border-radius:100%;
+    padding:3px;
+    font-size:9px;
+}
+.profile-icon
+{
+    width:25px;
+    border-radius:100%;
+    margin-left:20px;
+}
+

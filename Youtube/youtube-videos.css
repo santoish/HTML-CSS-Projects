@@ -1,0 +1,142 @@
+.videos-grid
+{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 10px;
+}
+
+.video-container
+{
+    display:grid;
+    grid-template-rows: 150px 70px;
+    grid-template-columns:250px;
+}
+.image-container
+{
+    position: relative;
+}
+.thumbnail
+{
+    width:250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.video-time
+{
+    position:absolute;
+    background-color: black;
+    color:white;
+    font-size:11px;
+    padding:3px 4px;
+    border-radius:3px;
+    font-weight:450;
+    bottom:8px;
+    right:10px;
+}
+.channel-pic-container
+{
+    /* display:flex;
+    justify-content: center;
+    align-items: center; */
+    margin-right:13px;
+    margin-top:10px;
+    height:fit-content;
+    position: relative; 
+    cursor:pointer;
+}
+
+.channel-picture
+{
+    width:30px;
+    height:30px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+.video-info
+{
+    display: grid;
+    grid-template-columns: 40px 210px;
+}
+.texts
+{
+    display:grid;
+    grid-template-rows: 60px auto auto;
+}
+p
+{
+    font-family:Arial;
+    margin-top:0;
+    margin-bottom:0;
+    /* font-weight:600; */
+}
+.channel-name,.view-count
+{
+    /* border:1px solid black; */
+    font-size:9px;
+    color:gray;
+    margin-top:5px;
+    font-weight: bold;
+}
+.title
+{
+    width:200px;
+    font-size:11px;
+    margin-top:10px;
+    font-weight: bold;
+}
+
+.texts .bottom-content
+{
+/*     border:1px solid black; */
+    margin-top:-15px;
+}
+
+.channel-pic-container .info-box
+{
+    display: grid;
+    grid-template-columns: 30px 90px;
+    position:absolute;
+    left:0;
+    bottom:-50px;
+    /* border:1px solid black; */
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.801);
+    border-radius:5px;
+    padding-left: 10px;
+    padding-right:10px;
+    padding-top:6px;
+    padding-bottom:6px;
+    opacity:0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+}
+.channel-pic-container:hover .info-box
+{
+    opacity:1;
+}
+
+.info-box .channel-picture
+{
+    width:25px;
+    height:25px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-top:5px;
+}
+.info-box .channel-name
+{
+    display:flex;
+    font-size:11px;
+    font-weight:bold;
+    font-family:Arial;
+    color:black;
+}
+.info-box .subscribe-count
+{
+    font-weight:500;
+    color:black;
+    font-size:10px;
+    margin-top:5px;
+}
